@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: Futura, sans-serif;
+}
+
+*:focus {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+li{
+  list-style-type: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.fee.feeActive{opacity:1;}
+/*nav style*/
+#navMenu .container .col-md-12 nav{padding-left: 0}
+#navMenu{
+  background-color: #F6F7FB;
+  border-bottom: 2px solid #F2F3F7;
+}
+#content{
+  background-color: #f6f7fb;
+}
+#navMenu nav .nav-link {
+    color: #58595D;
+    padding-right: 30px
+}
+#navMenu nav .navbar-brand{
+    color:#2583C9;
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 6vw;
+}
+#navMenu nav .navbar-brand span{
+    font-size: 23px;
+}
+.rightSide{
+  display:inline-block;
+}
+.rightSide a{
+    background-color: #2583C9;
+    color: white;
+    padding: 10px 50px;
+    transition:500ms all ease-in-out
+}
+.rightSide a:hover{background-color: #1c689c}
+.round {
+    border-radius: 50%;
+    background-color: white;
+    padding: 7px 9px;
+    margin-left: 3vw;
+    min-width: 38px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 1px #bbb9b9;
+    display: inline-block;
+    transition:500ms all ease-in-out
+}
+.profile-wrap:hover .round{
+  box-shadow: 0 2px 3px 1px #6f6e6e;
+}
+#firstName,#lastName{display: none}
+#content .breadcrumb{
+  background-color: transparent;
+  padding-left:0;
+  margin-bottom: 0
+}
+.breadcrumb a {
+    color: #58595D;
+    background-image: url(../img/arrow-left.jpg);
+    background-position: left;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.caption{
+  text-align: center;
+  margin-bottom: 25px;
+}
+.caption p{
+  color: #ABACB0;
+  font-size: 14px;
+  max-width: 500px;
+  margin:0 auto;
+}
+.caption h1{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caption h1 i{
+    color:#2583C9;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+/*form style*/
+.form{
+  background-color: white;
+  box-shadow: 0px 0px 8px 3px #80808047;
+  border-radius: 3px;
+  padding: 40px;
+  width: 50%;
+  margin:0 auto;
+  margin-bottom: 50px;
+}
+.form-part .col-md-12{padding:0;}
+.contact-inner input,.contact-inner .dropdownCustom{
+    padding: 8px;
+    border: 1px solid #cccccc;
+  }
+  .contact-inner .dropdownMenu{
+    height:0;
+    opacity: 0;
+    transition: 500ms all ease;
+    position: absolute;
+    background-color:white;
+    border: 1px solid #cccccc;
+    left: 0;
+    width: 100%;
+    top: 100%;
+    border-top:none;
+    z-index: -1
+  }
+  .dropdown-wrap{
+    padding: 8px;
+    transition:500ms all ease;
+  }
+  .dropdown-wrap img,.default img,.defaultOption img{
+      border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    object-fit: cover;
+  }
+  .rotateDrop{transform:rotate(180deg);}
+  .dropdown-wrap a,.defaultOption span{color:#333;font-size: 14px}
+  .dropdown-wrap:hover{background-color:#EEEFF3}
+  .contact-inner .dropdownMenu.dropActive{
+    height: auto;
+    opacity: 1;
+    z-index: 1
+  }
+  .default{cursor:pointer;color:#333;font-size: 14px}
+  .contact-inner select option{background-image: url('../img/visa.jpg')}
+  .cursor{
+    cursor: pointer;
+  }
+  .arrow-down {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transition: 500ms all ease-in-out;
+  }
+  .contact-inner .form-check{
+    display: inline-block;
+  }
+  .typeofMethod{
+      padding: 20px 0;
+      color:#4c4c4c;
+      border-bottom: 1px solid #cccccc
+    }
+  .typeofMethod  .nav-tabs{
+    border:none;
+    display:inline-block;
+  }
+  .typeofMethod  .nav-tabs li a:before{
+    content:"";
+    display: inline-block;
+    border:1px solid #2583C9;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px
+  }
+  .nav-tabs li a.active:before{background-color: #2583C9}
+  .typeofMethod span{
+      margin-right: 2vw;
+    }
+    #myTabContent {
+    padding-top: 20px;
+  }
+  .amount-wrap,.transfer-wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .amount-wrap span,.transfer-wrap span{
+    position: absolute;
+    right: 15px;
+    color: #464646
+  }
+  #usdAmountalert,#withdrawalert{
+    height: 0;
+    padding:0;
+    margin:0;
+    border:none;
+    transition: 500ms all ease-in-out;
+    margin-bottom: 7px;
+  }
+  #withdrawalert{
+    margin-top: 18px;
+    margin-bottom: 0;
+  }
+  .usdAmount.w-100,.transferAmount.w-100 {
+    padding-right: 50px;
+  }
+  .tab-content .submit {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 1px 4px 0px #c5cacd;
+    color:white;
+    background-color: #c5cacd;
+    cursor: no-drop;
+  }
+  .tab-content .amountActive{
+    background-color: #2583C9;
+    cursor:pointer;
+    box-shadow:0 1px 4px 0px #0081c6
+  }
+  .tab-content .amountDisable{
+    background-color: #c5cacd;
+    cursor:no-drop;
+    box-shadow: 0 1px 4px 0px #c5cacd
+  }
+  .tab-content .tab-pane #usdAmountalert.alertActive,.tab-content .tab-pane #withdrawalert.alertActive{
+    height: 100%;
+    padding:0.75rem 1.25rem;
+  }
+  .tab-content .tab-pane #usdAmountalert.alertDisable,.tab-content .tab-pane #withdrawalert.alertDisable{
+    height: 0;
+    padding:0;
+  }
+  .currency p{
+    margin:0;
+    color:lightgray;
+  }
+  .currency p:last-child{color:black;font-size:18px;}
+  .currency .row{align-items:center;}
+  .withdrawto-wrap p,.transfer p{padding:20px 0 5px 0;color:#333;margin:0;}
+  .withdrawto-wrap p{padding: 13px 0 5px 0}
+  .rules{padding-left: 28px;
+    padding-top: 33px;}
+    .transfer .col-md-12{padding:0 15px;}
+  .rules li{list-style-type: inherit;color:lightgray;}
+ .minMoney {
+    color: #c5cacd;
+    font-size: 12px;
+  }
+.fee {
+    color: red;
+    font-size: 12px;
+    opacity: 0
+}

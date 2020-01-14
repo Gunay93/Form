@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <link id="favicon" rel="shortcut icon" href="#" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css?ver=1.00>">
+    <link rel="stylesheet" href="css/fonts.css?ver=1.00">
+    <link rel="stylesheet" href="css/bootstrap.css?ver=1.04">
+  </head>
+  <body>
+    <section id="navMenu">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">Q9 <span>capital</span></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Menu1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu3</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Menu4</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="rightSide">
+                <a href="#">Deposit</a>
+              </div>
+              <div class="profile-wrap">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="round">
+                      <span id="firstName">Gunay</span>
+                      <span id="lastName">Hasanova</span>
+                      <div id="profileImage"></div>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Menu1</a>
+                    <a class="dropdown-item" href="#">Menu2</a>
+                    <a class="dropdown-item" href="#">Menu3</a>
+                  </div>
+                </li>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="breadcrumb">
+              <a href="#">back to dashboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="caption">
+              <h1><i class="fas fa-money-check-alt"></i><span>Withdraw Funds</span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum impedit necessitatibus, reiciendis id in reprehenderit architecto, sequi deserunt aspernatur. Atque facilis eos consectetur tempora veritatis officia et illo, minima quos. Atque facilis eos consectetur tempora veritatis officia et illo, minima quos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form">
+            <div class="form-part">
+              <div class="col-md-12">
+                <div class="contact-inner">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="position-relative">
+                        <div class="dropdownCustom cursor">
+                          <a class="default"></a>
+                          <div class="dropdownMenu">
+                            <div class="dropdown-wrap">
+                              <a class="dropdownItem">
+                                <img src="img/visa.jpg" alt="">
+                                <span>2017442796 - 120 000 USD</span>
+                              </a>
+                            </div>
+                            <div class="dropdown-wrap">
+                              <a class="dropdownItem">
+                                <img src="img/master.png" alt="">
+                                <span>2019442796 - 100 000 USD</span>
+                              </a>
+                            </div>
+                          </div>
+                          <img class="arrow-down" src="img/arrow-down.png">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="typeofMethod">
+                        <span>Transfer method:</span>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">USD</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Stable Coin</a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                        <div class="tab-content" id="myTabContent">
+
+                          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <form id="myForm1" name="myForm" method="post" enctype="multipart/form-data" action="">
+                            <p>Transfer Amount:</p>
+                            <p class="alert alert-danger" id="usdAmountalert"></p>
+                            <div class="position-relative amount-wrap">
+                              <input value="0" type="text" class="usdAmount w-100" name="TransferAmount" onkeyup="validateNum()">
+                              <span>USD</span>
+                            </div>
+                            <input type="submit" class="submit" disabled="true">
+                            </form>
+                          </div>
+                        
+                          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <form id="myForm2" name="myForm" method="post" enctype="multipart/form-data" action="">
+                            <div class="position-relative">
+                              <div class="dropdownCustom cursor currency">
+                                <span class="defaultOption">Cryptocurrency</span>
+                                <div class="dropdownMenu">
+                                  <div class="dropdown-wrap">
+                                    <a class="dropdownItem">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                          <img src="img/usdt.png" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p>Coin</p>
+                                          <p class="currencyName">USDT</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <span>1 USDT = 0.99 USD</span>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                  <div class="dropdown-wrap">
+                                    <a class="dropdownItem">
+                                      <div class="row">
+                                        <div class="col-md-1">
+                                          <img src="img/tusd.png" alt="">
+                                        </div>
+                                        <div class="col-md-7">
+                                          <p>Coin</p>
+                                          <p class="currencyName">TUSDT</p>
+                                        </div>
+                                        <div class="col-md-4">
+                                          <span>1 TUSDT = 0.99 USD</span>
+                                        </div>
+                                      </div>
+                                    </a>
+                                  </div>
+                                </div>
+                                <img class="arrow-down" src="img/arrow-down.png">
+                              </div>
+                            </div>
+                            <div class="withdrawto-wrap">
+                              <p class="alert alert-danger" id="withdrawalert"></p>
+                              <p>Fill in the address you would like to withdraw to</p>
+                              <input type="text" class="withdrawto w-100" name="WithDrawTo" onkeyup="validateChar()">
+                            </div>
+                            <div class="transfer">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <p>Transfer amount:</p>
+                                  <div class="position-relative transfer-wrap">
+                                    <input required value="0" type="number" class="transferAmount w-100" onkeyup="calculateFee()" name="transferAmount">
+                                    <span>USD</span>
+                                  </div>
+                                  <span class="minMoney">Minimum 1.00000000 USDT</span>
+                                </div>
+                                <div class="col-md-6">
+                                  <p>You receive:</p>
+                                  <div class="position-relative transfer-wrap">
+                                    <input value="0" type="text" class="yourReceive w-100" name="yourReceive">
+                                    <span id="receive"></span>
+                                  </div>
+                                  <span class="fee">Fee: 3.00%</span>
+                                </div>
+                                <div class="col-md-12"><input type="submit" class="submit" disabled="true"></div>
+                              
+                              <ol class="rules">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                              </ol>
+                            </div>
+                          </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="js/jquery-3.4.1.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Custom JS file -->
+      <script src="js/script.js?ver=1.00"></script>
+    </body>
+  </html>
